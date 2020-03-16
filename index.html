@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/page.css" />
+    <link rel="stylesheet" href="styles/toggle.css" />
+  </head>
+  <body>
+    <main>
+      <div class="text-container">
+        <h1>
+          Įkelk savo <span class="green-span">mylimo augintinio</span> nuotrauką
+          ir laimėk KIKA įsteigtus prizus!
+        </h1>
+        <form class="form">
+          <input
+            type="text"
+            class="form-input js-text__input"
+            placeholder="Vardas, Pavardė"
+            onfocus="this.placeholder = ''"
+            onblur="this.placeholder = 'Vardas, Pavardė'"
+          />
+          <input
+            type="text"
+            class="form-input js-form__input"
+            id="name"
+            name="name"
+            placeholder="Kontaktinis tel. nr."
+            onfocus="this.placeholder = ''"
+            onblur="this.placeholder = 'Kontaktinis tel. nr.'"
+          />
+          <input
+            type="text"
+            class="form-input js-text__input"
+            id="name"
+            name="name"
+            placeholder="Atsiėmimo vieta (miestas ir parduotuvė)"
+            onfocus="this.placeholder = ''"
+            onblur="this.placeholder = 'Atsiėmimo vieta (miestas ir parduotuvė)'"
+          />
+          <input
+            type="text"
+            class="form-input js-text__input"
+            id="name"
+            name="name"
+            placeholder="Augintinio vardas"
+            onfocus="this.placeholder = ''"
+            onblur="this.placeholder = 'Augintinio vardas'"
+          />
+          <input
+            type="email"
+            class="form-input js-email__input"
+            id="name"
+            name="name"
+            placeholder="El. paštas"
+            onfocus="this.placeholder = ''"
+            onblur="this.placeholder = 'El. paštas'"
+          />
+          <div class="toggle-container">
+            <img src="./assets/img/cat.png" class="cat" alt="Cat" />
+            <label class="switch" for="checkbox">
+              <input type="checkbox" id="checkbox" />
+              <div class="slider round"></div>
+            </label>
+            <img src="./assets/img/dog.png" class="dog" alt="Dog" />
+          </div>
+          <button class="submit" type="submit">Dalyvauti</button>
+          <div class="radios-container">
+            <div class="radio-1-container">
+              <input class="radio js-radio" id="radio-1" type="radio" />
+              <label for="radio-1">Sutinku su <a href="">taisyklėmis</a></label>
+            </div>
+            <div class="radio-2-container">
+              <input class="radio js-radio" id="radio-2" type="radio" />
+              <label for="radio-2"
+                >Sutinku su <a href="">duomenų privatumo taisyklėmis</a></label
+              >
+            </div>
+            <div class="radio-3-container">
+              <input class="radio js-radio" id="radio-3" type="radio" />
+              <label for="radio-3"
+                >Sutinku, kad dalyvių duomenys būtų perduoti UAB KIKA</label
+              >
+            </div>
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="./js/formValidation.js"></script>
+</html>
