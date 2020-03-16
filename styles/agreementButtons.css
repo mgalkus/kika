@@ -1,0 +1,59 @@
+.radios-container {
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+}
+
+.agreement-container {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 5px;
+}
+
+/* Hide the browser's default checkbox */
+.agreement-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  background-color: rgb(246, 207, 66);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.agreement-container.error .checkmark {
+  background-color: red;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "●";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.agreement-container input:checked ~ .checkmark:after {
+  display: block;
+  z-index: 99;
+}
+
+.agreement-container input:checked ~ .checkmark {
+  background-color: rgb(246, 207, 66);
+}
+
+/* Style the checkmark/indicator */
+.agreement-container .checkmark:after {
+  left: 4px;
+  top: -1px;
+}

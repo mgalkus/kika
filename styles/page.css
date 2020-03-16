@@ -35,14 +35,6 @@
   color: black;
 }
 
-.cta {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 1920px;
-  height: 858px;
-  z-index: 55;
-}
 .submit {
   font-size: 15px;
   color: rgb(255, 255, 255);
@@ -54,11 +46,7 @@
   padding: 10px 50px;
   cursor: pointer;
 }
-
-.radios-container {
-  font-size: 14px;
-}
-
+/* 
 input[type="radio"] {
   background-color: rgb(246, 207, 66);
   border-radius: 10px;
@@ -93,4 +81,4 @@ input[type="radio"]:after {
 
 input[type="radio"].error:after {
   background-color: red;
-}
+} */
